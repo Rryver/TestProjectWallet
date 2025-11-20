@@ -7,7 +7,7 @@
 ```
 POST api/v1/wallet
 {
-  valletId: UUID,
+  walletId: UUID,
   operationType: DEPOSIT or WITHDRAW,
   amount: 1000
 }
