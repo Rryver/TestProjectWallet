@@ -1,0 +1,30 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/TestProjectWallet
+    username: postgres
+    password: root
+
+    dbcp2:
+      default-schema: public
+  liquibase:
+    enabled: true
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
+    open-in-view: false
+
+app:
+  max-withdraw-in-one-time: 1000
+
+springdoc:
+  swagger-ui:
+    path: /doc
+
+#logging:
+#  level:
+#    sql: debug
+#    web: debug
+#    root: debug

@@ -1,0 +1,20 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1763458937-insert-test-data-to-wallet-table
+      author: Alexandr Kolosov
+      changes:
+        - insert:
+            tableName: wallet
+            columns:
+              - column:
+                  name: id
+                  value: 8d1208fc-f401-496c-9cb8-483fef121234
+              - column:
+                  name: amount
+                  value: 1000.5
+              - column:
+                  name: created_at
+                  value: 2025-11-19 10:23:54
+              - column:
+                  name: updated_at
+                  value: 2025-11-19 10:23:54

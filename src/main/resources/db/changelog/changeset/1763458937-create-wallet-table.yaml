@@ -1,0 +1,24 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1763458937-create-wallet-table
+      author: Alexandr Kolosov
+      changes:
+        - createTable:
+            tableName: wallet
+            columns:
+              - column:
+                  name: id
+                  type: UUID
+#                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: amount
+                  type: NUMERIC
+              - column:
+                  name: created_at
+                  type: timestamp without timezone
+              - column:
+                  name: updated_at
+                  type: timestamp without timezone

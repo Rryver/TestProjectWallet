@@ -1,0 +1,5 @@
+databaseChangeLog:
+  - include:
+      file: db/changelog/changeset/1763458937-create-wallet-table.yaml
+  - include:
+      file: db/changelog/changeset/1763458937-insert-test-data-to-wallet-table.yaml

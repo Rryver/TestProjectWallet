@@ -1,0 +1,20 @@
+spring:
+  init:
+    mode: always
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+  datasource:
+    url: jdbc:h2:mem:testdb;MODE=PostgreSQL;NON_KEYWORDS=value;
+    username: sa
+    password: password
+    driver-class-name: org.h2.Driver
+  h2:
+    console:
+      enabled: true
+
+  liquibase:
+    enabled: false
+
+
+app:
+  max-withdraw-in-one-time: 10000
